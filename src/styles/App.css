@@ -12,9 +12,23 @@
   --wc-highligh-text: white;
   --wc-content-bg: #fff;
   --wc-subtext: #767676;
-  --wc-input-bg: #cd9d40;
 }
 
 body {
-  background-color: #242424;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", serif;
+}
+
+.link {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  transition-property: color;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+.link:hover {
+  color: var(--wc-orange);
 }
