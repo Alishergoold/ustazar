@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Container from 'react-bootstrap/esm/Container';
 import Carousel from "react-bootstrap/Carousel";
 import Card from "react-bootstrap/Card";
 import { StyledHeaderCorusel } from '../../styles/container/Header/Header';
@@ -9,7 +8,6 @@ class HeaderSlider extends Component {
   render() {
     return (
       <StyledHeaderCorusel>
-        <Container>
           <Carousel>
             <Carousel.Item>
               <img
@@ -51,8 +49,7 @@ class HeaderSlider extends Component {
               <Card.Img variant="top" src="https://demo.themefreesia.com/diamond-store/wp-content/uploads/sites/49/2019/04/1513739-pxhere-n.jpg" />
             </div>
           </div>
-          
-        </Container>
+
       </StyledHeaderCorusel>
     );
   }
