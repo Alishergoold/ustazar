@@ -5,12 +5,17 @@ import NewProducts from './New Products/NewProducts';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/App.css';
+import Footer from './Footer/Footer';
+
+
+
 
 function App() {
   return (
     <Main>
       <Header />
       <NewProducts />
+      <Footer />
     </Main>
   );
 }
