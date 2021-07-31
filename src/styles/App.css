@@ -1,34 +1,7 @@
-:root {
-  --woocommerce: #a46497;
-  --wc-green: #7ad03a;
-  --wc-red: #a00;
-  --wc-orange: #ffba00;
-  --wc-blue: #2ea2cc;
-  --wc-primary: #a46497;
-  --wc-primary-text: white;
-  --wc-secondary: #ebe9eb;
-  --wc-secondary-text: #515151;
-  --wc-highlight: #77a464;
-  --wc-highligh-text: white;
-  --wc-content-bg: #fff;
-  --wc-subtext: #767676;
-}
 
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", serif;
-}
-
-.link {
-  color: #fff;
-  text-decoration: none;
-  cursor: pointer;
-  transition-property: color;
-  transition-duration: 0.2s;
-  transition-timing-function: linear;
-}
-.link:hover {
-  color: var(--wc-orange);
 }
