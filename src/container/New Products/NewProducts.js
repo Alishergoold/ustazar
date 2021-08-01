@@ -13,6 +13,7 @@ class NewProducts extends Component {
       <StyledNewProduct>
         <Container>
           <h2 className="title">New Products</h2>
+
           <div style={{ display: "flex", justifyContent: "space-between" }}>
             <Card style={{ width: "420px", color: "#000", margin:'10px'}}>
               <Link className="link card__image">
@@ -192,6 +193,7 @@ class NewProducts extends Component {
               </Card.Body>
             </Card>
           </div>
+
           <div style={{ display: "flex", justifyContent: "space-between" }}>
             <Card style={{ width: "420px", color: "#000", margin:'10px'}}>
               <Link className="link card__image">
@@ -371,15 +373,17 @@ class NewProducts extends Component {
               </Card.Body>
             </Card>
           </div>
+
           <div className="product__item">
             <Card.Img
-                    className="product__img"
-                    variant="top"
-                    src="https://demo.themefreesia.com/diamond-store/wp-content/uploads/sites/49/2019/03/1053646-pxhere-601859.jpg"
-                  />
+              className="product__img"
+              variant="top"
+              src="https://demo.themefreesia.com/diamond-store/wp-content/uploads/sites/49/2019/03/1053646-pxhere-601859.jpg"
+            />
 
           </div>
-         <div>
+          <div>
+
          <h2 className="title" style={{paddingTop:'30px'}}>Best Sellers</h2>
           <div style={{ display: "flex", justifyContent: "space-between"}}>
             <Card style={{ width: "420px", color: "#000", margin:'10px'}}>
@@ -619,6 +623,7 @@ class NewProducts extends Component {
               </Card.Body>
             </Card>
           </div>
+
           </div>
         </Container>
       </StyledNewProduct>
