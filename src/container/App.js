@@ -1,3 +1,36 @@
+import { useState, useEffect } from "react";
+import ChildComponent from "./ChildComponent..js";
+import LifeCycleMethods from "./LifeCycleMethod.js";
+
+function App(props){
+
+  const [modalVisible, setModalVisible] = useState(false)
+
+  return(
+    <div>
+    
+      <LifeCycleMethods />
+
+      <h1>Parent Component</h1>
+
+      <button onClick={()=>setModalVisible(true)}> Show modal </button>
+
+      <hr/>
+
+      {
+        modalVisible ? 
+        <ChildComponent setVisible={setModalVisible} /> : '' 
+        // modalVisible true bo'lsa chiqar aks holda chiqarma
+      }
+
+      
+
+    </div>
+  )
+}
+
+export default App;
+
 ////PROPS
 //const App = (props) => {
 //  return (
@@ -165,7 +198,9 @@
 //}
 //export default App;
 
-import {useState} from 'react';
+
+
+//import {useState} from 'react';
 
 //function App(props){
 //  const [user, setUser] = useState({firstName:'aaa', lastName:'bbb'})
@@ -189,37 +224,32 @@ import {useState} from 'react';
 
 //Murakkab state
 
+//function App(props){
+//  const [user, setUser] = useState({
+//    name: 'AAA',
+//    address:{
+//      country:{
+//        city:{
+//          street:{
+//            name:'BBB'
+//          }
+//        }
+//      }
+//    }
+//  });
 
+//  function changeUser(){
+//    user.address.country.city.street.name = 'CCC'
+//    let a = {...user}
+//    setUser(a)
+//    }
 
-function App(props){
-  const [user, setUser] = useState({
-    name: 'AAA',
-    address:{
-      country:{
-        city:{
-          street:{
-            name:'BBB'
-          }
-        }
-      }
-    }
-  });
-
-  function changeUser(){
-    user.address.country.city.street.name = 'CCC'
-    let a = {...user}
-    setUser(a)
-    }
-
-  return(
-    <div>
-      <button onClick={changeUser}>Change user</button>
+//  return(
+//    <div>
+//      <button onClick={changeUser}>Change user</button>
      
-      {JSON.stringify(user, null, 2)}
-    </div>
-  )
-}
-
-
-
-export default App;
+//      {JSON.stringify(user, null, 2)}
+//    </div>
+//  )
+//}
+//export default App;
