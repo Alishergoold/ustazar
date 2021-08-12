@@ -1,35 +1,69 @@
-import { useState, useEffect } from "react";
-import ChildComponent from "./ChildComponent..js";
-import LifeCycleMethods from "./LifeCycleMethod.js";
+//import { useState } from "react";
+import Task211 from "./Task211";
+import Task212 from "./Task212";
+import AppToDo from "./ToDoList/App";
+import AddNumber from "./UseStateuseEffect";
 
-function App(props){
+//import ChildComponent from "./ChildComponent..js";
+//import LifeCycleMethods from "./LifeCycleMethod.js";
 
-  const [modalVisible, setModalVisible] = useState(false)
-
+function App(){
   return(
     <div>
-    
-      <LifeCycleMethods />
-
-      <h1>Parent Component</h1>
-
-      <button onClick={()=>setModalVisible(true)}> Show modal </button>
-
-      <hr/>
-
-      {
-        modalVisible ? 
-        <ChildComponent setVisible={setModalVisible} /> : '' 
-        // modalVisible true bo'lsa chiqar aks holda chiqarma
-      }
-
-      
-
+      <Task211 />
+      <br/>
+      <br/>
+      <br/>
+      <hr />
+      <Task212 />
+      <br/>
+      <br/>
+      <br/>
+      <hr />
+      <AppToDo />
+      <br/>
+      <br/>
+      <br/>
+      <hr />
+      <AddNumber />
+      <br/>
+      <br/>
+      <br/>
+      <hr />
     </div>
+
   )
 }
-
 export default App;
+
+//function App(props){
+
+//  const [modalVisible, setModalVisible] = useState(false)
+
+//  return(
+//    <div>
+    
+//      <LifeCycleMethods />
+
+//      <h1>Parent Component</h1>
+
+//      <button onClick={()=>setModalVisible(true)}> Show modal </button>
+
+//      <hr/>
+
+//      {
+//        modalVisible ? 
+//        <ChildComponent setVisible={setModalVisible} /> : '' 
+//        // modalVisible true bo'lsa chiqar aks holda chiqarma
+//      }
+
+//      <AppTest setTestApp={'salom'} />
+
+//    </div>
+//  )
+//}
+
+//export default App;
 
 ////PROPS
 //const App = (props) => {
@@ -72,7 +106,6 @@ export default App;
 //  )
 //}
 //export default App;
-
 
 
 
@@ -162,6 +195,7 @@ export default App;
 //  )
 //}
 //export default App;
+
 
 // useState count
 //import {useState} from 'react';
