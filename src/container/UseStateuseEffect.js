@@ -4,16 +4,16 @@ function AddNumber() {
 
   const [text, setText] = useState();
 
-  const [state, setState] = useState({
-    text: 'Number',
-    date: Date.now()
-  });
+  //const [state, setState] = useState({
+  //  text: 'Number',
+  //  date: Date.now()
+  //});
 
-  function ChangState() {
-    return(
-      
-    )
-  }
+  //function ChangState() {
+  //  return(
+  //    <div>div</div>
+  //  )
+  //}
 
   function ChangeText(){
     return setText(0)
@@ -25,7 +25,7 @@ function AddNumber() {
 
   return(
     <div className='card col-md-4'>
-      <h1>  {text}</h1>
+      <h1>{text}</h1>
 
       <button onClick={ChangeText}
        className='btn btn-primary'>Qo'shish</button>
@@ -33,7 +33,7 @@ function AddNumber() {
       <button onClick={DeleteText}
        className='mt-3 btn btn-primary'>O'chirish</button>
 
-      <button onClick={()=>setState({text:"NEw text"}) } className='btn btn-danger'>Stateni O'zgartir</button>
+      {/*<button onClick={()=>setState({text:"NEw text"}) } className='btn btn-danger'>Stateni O'zgartir</button>*/}
     </div>
   )
   

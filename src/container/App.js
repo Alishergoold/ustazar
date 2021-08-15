@@ -1,8 +1,9 @@
 //import { useState } from "react";
-import Task211 from "./Task211";
-import Task212 from "./Task212";
+//import Task215 from "./Task215";
+//import Task211 from "./Task211";
+//import Task212 from "./Task212";
 import AppToDo from "./ToDoList/App";
-import AddNumber from "./UseStateuseEffect";
+//import AddNumber from "./UseStateuseEffect";
 
 //import ChildComponent from "./ChildComponent..js";
 //import LifeCycleMethods from "./LifeCycleMethod.js";
@@ -10,12 +11,12 @@ import AddNumber from "./UseStateuseEffect";
 function App(){
   return(
     <div>
-      <Task211 />
+      {/*<Task211 />*/}
       <br/>
       <br/>
       <br/>
       <hr />
-      <Task212 />
+      {/*<Task212 />*/}
       <br/>
       <br/>
       <br/>
@@ -25,7 +26,12 @@ function App(){
       <br/>
       <br/>
       <hr />
-      <AddNumber />
+      {/*<AddNumber />*/}
+      <br/>
+      <br/>
+      <br/>
+      <hr />
+      {/*<Task215 />*/}
       <br/>
       <br/>
       <br/>
