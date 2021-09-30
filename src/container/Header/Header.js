@@ -8,12 +8,15 @@ import HeaderSlider from '../HeaderSlider/HeaderSlider';
 class Header extends Component {
   render() {
     return (
-      <Headers>
-        <HeaderTop />
-        <HeaderLogo />
-        <HeaderNavbar />
-        <HeaderSlider />
-      </Headers>
+      <div>
+        <Headers>
+          <HeaderTop />
+          <HeaderLogo />
+          <HeaderNavbar />
+          <HeaderSlider />
+        </Headers>
+    
+      </div>
     );
   }
 }

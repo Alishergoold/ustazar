@@ -26,5 +26,33 @@ export const StyledProduct = styled.div`
     display: flex;
     align-items: top;
     justify-content: space-between;
+   }
+   .product__price{
+     color:var(--wc-orange);
+   }
+   .btn__submit{
+     color:#fff;
+     margin-left:5px;
+     background-color: var(--wc-orange);
+   }
+   .btn__submit:hover{
+     transition: 0.3s;
+     background-color: var(--wc-subtext);
+   }
+  .product__wishlist{
+    width:50%;
+    padding: 5px;
+    margin: 20px 0px;
+    border: 1px solid #fff;
+    cursor:pointer;
+    color: var(--wc-orange);
+  }
+  .product__wishlist:hover{
+    transition: 0.2s;
+    background-color: #fff;
+  }
+  .product__item{
+    padding-left:5px;
+    color: var(--wc-secondary-text);
   }
 `;

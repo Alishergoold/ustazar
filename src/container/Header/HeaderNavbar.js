@@ -6,6 +6,8 @@ import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { StyledHeaderNavbar } from "../../styles/container/Header/Header";
 
+import { Link } from "react-router-dom";
+
 class HeaderNavbar extends Component {
   render() {
     return (
@@ -15,7 +17,7 @@ class HeaderNavbar extends Component {
             <Navbar.Toggle className="menu__burger" aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
-              <Nav.Link href="#home" className="link">Home</Nav.Link>
+              <Nav.Link href="#home" className="link"><Link to="/home">Home</Link></Nav.Link>
                 <Nav.Link href="#home" className="link">Product Category</Nav.Link>
                 <NavDropdown title="Sections" id="basic-nav-dropdown" className="link">
                   <NavDropdown.Item href="#action/3.1">Sections</NavDropdown.Item>

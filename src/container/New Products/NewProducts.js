@@ -6,6 +6,7 @@ import Badge from "react-bootstrap/Badge";
 import { StyledNewProduct } from "../../styles/container/StyledProducts/StyledProducts";
 import { VscHeart } from "react-icons/vsc";
 import { CgShoppingCart } from "react-icons/cg";
+import Product from "../Product/Product";
 
 class NewProducts extends Component {
   render() {
@@ -16,7 +17,7 @@ class NewProducts extends Component {
 
           <div style={{ display: "flex", justifyContent: "space-between" }}>
             <Card style={{ width: "420px", color: "#000", margin:'10px'}}>
-              <Link className="link card__image">
+              <Link to="/product" className="link card__image">
                   <Badge className="card__badge card__badge_bestseller">Bestseller</Badge>
                   <Badge className="card__badge card__badge_sale">- 3%</Badge>
               <div className='card__scale'>
@@ -28,7 +29,7 @@ class NewProducts extends Component {
               </div>
               </Link>
               <Card.Body className="card__body">
-                <Link className="link">
+                <Link to="/product" className="link">
                   <Card.Title className="card__title">
                     Diamond Ring 2 carat Eternity Band
                   </Card.Title>
@@ -75,7 +76,7 @@ class NewProducts extends Component {
               </Card.Body>
             </Card>
             <Card style={{ width: "420px", color: "#000", margin:'10px'}}>
-              <Link className="link card__image">
+              <Link to="/product" className="link card__image">
                   <Badge className="card__badge card__badge_bestseller">Bestseller</Badge>
                   <Badge className="card__badge card__badge_sale">- 3%</Badge>
                   <div className='card__scale'>                
@@ -87,7 +88,7 @@ class NewProducts extends Component {
                 </div>
               </Link>
               <Card.Body className="card__body">
-                <Link className="link">
+                <Link to="/product" className="link">
                   <Card.Title className="card__title">
                     Diamond Ring 2 carat Eternity Band
                   </Card.Title>

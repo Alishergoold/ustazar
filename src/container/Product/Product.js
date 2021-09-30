@@ -1,9 +1,6 @@
 import { Container, Row, Col, Image, Card, Badge } from "react-bootstrap";
-import { CgHeart, CgSearch} from "react-icons/cg";
-
+import { CgHeart, CgSearch } from "react-icons/cg";
 import { Link } from "react-router-dom";
-
-
 import { StyledProduct } from "../../styles/container/StyledProduct";
 import { StyledNewProduct } from "../../styles/container/StyledProducts/StyledProducts";
 
@@ -13,15 +10,15 @@ function Product() {
       <StyledProduct>
         <div className="product__page">
           <div className="main">
-            <span className="sale">Sale</span>
+            {/*<span className="sale">Sale</span>*/}
             <Row>
               <Row>
                 <Col>
                   <div className="main__left">
                     <div className="product__img">
-                      <Link>
+                      {/*<Link>
                         <CgSearch />
-                      </Link>
+                      </Link>*/}
                       <div className="product__card">
                         <Link>
                           <Image src="https://demo.themefreesia.com/diamond-store/wp-content/uploads/sites/49/2019/03/663149-pxhere.jpg" />
@@ -35,49 +32,44 @@ function Product() {
                   <div className="main__right">
                     <h1 className="title">Diamond Ring in Sterling Silver</h1>
                     <p class="price">
-                      <del aria-hidden="true">
-                        <span class="woocommerce-Price-amount amount">
-                          <bdi>
-                            <span class="woocommerce-Price-currencySymbol">
-                              £
-                            </span>
-                            1,300.00
-                          </bdi>
-                        </span>
-                      </del>{" "}
-                      <ins>
-                        <span class="woocommerce-Price-amount amount">
-                          <bdi>
-                            <span class="woocommerce-Price-currencySymbol">
-                              £
-                            </span>
-                            1,250.00
-                          </bdi>
-                        </span>
-                      </ins>
+                      <span className="product__price">
+                        <span>£</span>
+                        <span>1,300.00</span>
+                      </span>
+
+                      <span className="product__price">
+                        <span>£</span>
+                        <span>1,250.00</span>
+                      </span>
                     </p>
                     <div className="product__submit">
                       <input type="number" />
-                      <button type="submit">Add to card</button>
+                      <button className="btn__submit" type="submit">
+                        Add to card
+                      </button>
                     </div>
                     <div className="product__wishlist">
                       <CgHeart />
                       Add to Wishlist
                     </div>
-                    <p>
-                      Categories: <Link>Mixed</Link>, <Link>Rings</Link>{" "}
+                    <p className="product__category">
+                      Categories:
+                      <Link className="product__item">Mixed</Link>
+                      <Link className="product__item">Rings</Link>{" "}
                     </p>
                   </div>
                 </Col>
               </Row>
 
               <Row>
-                Description
+                <p>Description</p>
                 <hr />
               </Row>
 
               <Row className="product__description">
-                <div className="description__title">Description</div>
+                <div className="description__title">
+                  <p>Description</p>
+                </div>
                 <div className="description__text">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -89,16 +81,28 @@ function Product() {
                   mollit anim id est laborum.
                 </div>
               </Row>
-              
+
               <StyledNewProduct>
                 <Row>
-                  <h2 className="title" style={{paddingTop:'30px'}}>Related products</h2>
-                  
-                  <div style={{ display: "flex", justifyContent: "space-between"}}>
-                    <Card style={{ backgroundColor:'#000', width: "420px", margin:'10px'}}>
+                  <h2 className="title" style={{ paddingTop: "30px" }}>
+                    Related products
+                  </h2>
+
+                  <div
+                    style={{ display: "flex", justifyContent: "space-between" }}
+                  >
+                    <Card
+                      style={{
+                        backgroundColor: "#000",
+                        width: "420px",
+                        margin: "10px",
+                      }}
+                    >
                       <Link className="link card__image">
-                        <Badge className="card__badge card__badge_bestseller">Sale</Badge>
-                        <div className='card__scale'>
+                        <Badge className="card__badge card__badge_bestseller">
+                          Sale
+                        </Badge>
+                        <div className="card__scale">
                           <Card.Img
                             className="card__img"
                             variant="top"
@@ -114,12 +118,10 @@ function Product() {
                         </Link>
                         <Card.Text className="card__text">
                           <span class="card__price">
-                          <ins>
+                            <ins>
                               <span>
-                                <bdi style={{marginRight:'10px'}}>
-                                  <span>
-                                    £
-                                  </span>
+                                <bdi style={{ marginRight: "10px" }}>
+                                  <span>£</span>
                                   1,750.00
                                 </bdi>
                               </span>
@@ -128,14 +130,11 @@ function Product() {
                             <del>
                               <span>
                                 <bdi>
-                                  <span>
-                                    £
-                                  </span>
+                                  <span>£</span>
                                   1,800.00
                                 </bdi>
                               </span>
                             </del>
-
                           </span>
                         </Card.Text>
 
@@ -149,10 +148,18 @@ function Product() {
                         </div>
                       </Card.Body>
                     </Card>
-                    <Card style={{ backgroundColor:'#000', width: "420px", margin:'10px'}}>
+                    <Card
+                      style={{
+                        backgroundColor: "#000",
+                        width: "420px",
+                        margin: "10px",
+                      }}
+                    >
                       <Link className="link card__image">
-                        <Badge className="card__badge card__badge_bestseller">Sale</Badge>
-                        <div className='card__scale'>
+                        <Badge className="card__badge card__badge_bestseller">
+                          Sale
+                        </Badge>
+                        <div className="card__scale">
                           <Card.Img
                             className="card__img"
                             variant="top"
@@ -168,12 +175,10 @@ function Product() {
                         </Link>
                         <Card.Text className="card__text">
                           <span class="card__price">
-                          <ins>
+                            <ins>
                               <span>
-                                <bdi style={{marginRight:'10px'}}>
-                                  <span>
-                                    £
-                                  </span>
+                                <bdi style={{ marginRight: "10px" }}>
+                                  <span>£</span>
                                   1,750.00
                                 </bdi>
                               </span>
@@ -182,14 +187,11 @@ function Product() {
                             <del>
                               <span>
                                 <bdi>
-                                  <span>
-                                    £
-                                  </span>
+                                  <span>£</span>
                                   1,800.00
                                 </bdi>
                               </span>
                             </del>
-
                           </span>
                         </Card.Text>
 
@@ -203,10 +205,18 @@ function Product() {
                         </div>
                       </Card.Body>
                     </Card>
-                    <Card style={{ backgroundColor:'#000', width: "420px", margin:'10px'}}>
+                    <Card
+                      style={{
+                        backgroundColor: "#000",
+                        width: "420px",
+                        margin: "10px",
+                      }}
+                    >
                       <Link className="link card__image">
-                        <Badge className="card__badge card__badge_bestseller">Sale</Badge>
-                        <div className='card__scale'>
+                        <Badge className="card__badge card__badge_bestseller">
+                          Sale
+                        </Badge>
+                        <div className="card__scale">
                           <Card.Img
                             className="card__img"
                             variant="top"
@@ -222,12 +232,10 @@ function Product() {
                         </Link>
                         <Card.Text className="card__text">
                           <span class="card__price">
-                          <ins>
+                            <ins>
                               <span>
-                                <bdi style={{marginRight:'10px'}}>
-                                  <span>
-                                    £
-                                  </span>
+                                <bdi style={{ marginRight: "10px" }}>
+                                  <span>£</span>
                                   1,750.00
                                 </bdi>
                               </span>
@@ -236,14 +244,11 @@ function Product() {
                             <del>
                               <span>
                                 <bdi>
-                                  <span>
-                                    £
-                                  </span>
+                                  <span>£</span>
                                   1,800.00
                                 </bdi>
                               </span>
                             </del>
-
                           </span>
                         </Card.Text>
 
@@ -257,10 +262,18 @@ function Product() {
                         </div>
                       </Card.Body>
                     </Card>
-                    <Card style={{ backgroundColor:'#000', width: "420px", margin:'10px'}}>
+                    <Card
+                      style={{
+                        backgroundColor: "#000",
+                        width: "420px",
+                        margin: "10px",
+                      }}
+                    >
                       <Link className="link card__image">
-                        <Badge className="card__badge card__badge_bestseller">Sale</Badge>
-                        <div className='card__scale'>
+                        <Badge className="card__badge card__badge_bestseller">
+                          Sale
+                        </Badge>
+                        <div className="card__scale">
                           <Card.Img
                             className="card__img"
                             variant="top"
@@ -276,12 +289,10 @@ function Product() {
                         </Link>
                         <Card.Text className="card__text">
                           <span class="card__price">
-                          <ins>
+                            <ins>
                               <span>
-                                <bdi style={{marginRight:'10px'}}>
-                                  <span>
-                                    £
-                                  </span>
+                                <bdi style={{ marginRight: "10px" }}>
+                                  <span>£</span>
                                   1,750.00
                                 </bdi>
                               </span>
@@ -290,14 +301,11 @@ function Product() {
                             <del>
                               <span>
                                 <bdi>
-                                  <span>
-                                    £
-                                  </span>
+                                  <span>£</span>
                                   1,800.00
                                 </bdi>
                               </span>
                             </del>
-
                           </span>
                         </Card.Text>
 
@@ -311,15 +319,10 @@ function Product() {
                         </div>
                       </Card.Body>
                     </Card>
-
                   </div>
-                
                 </Row>
               </StyledNewProduct>
-
-            </Row>              
-            
-
+            </Row>
           </div>
 
           <div className="aside">

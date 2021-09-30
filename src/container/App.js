@@ -1,24 +1,27 @@
-import React from 'react';
-import { Main } from '../styles/Main';
-import Header from './Header/Header';
-import NewProducts from './New Products/NewProducts';
+import React from "react";
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '../styles/App.css';
-import Footer from './Footer/Footer';
-import Product from './Product/Product';
-
-
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../styles/App.css";
+import Home from "./Home/Home";
+import NewProducts from "./New Products/NewProducts";
+import Product from "./Product/Product";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  useParams
+} from "react-router-dom";
 
 
 function App() {
   return (
-    <Main>
-      <Header />
-      <NewProducts />
-      <Product />
-      <Footer />
-    </Main>
+    <Router>
+      <div>
+          <Home />
+      </div>      
+    </Router>
+
   );
 }
 
